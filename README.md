@@ -1,5 +1,5 @@
 # HeavenOrHell
-UB Hacking project
+A challenging dodge shooting game.
 
 ## Inspiration
 We like game and we want to make different types of games.
