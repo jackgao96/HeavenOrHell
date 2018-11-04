@@ -130,12 +130,13 @@ public class boss : MonoBehaviour
 	}
 	private void EnemyAttack2 (int i)
 	{
-		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, 180f+i*6)));
-		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, i*6)));
-		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, 90f+i*6)));
-		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, -90f+i*6)));
-		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, 160f+i*6)));
-		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, 200f+i*6)));
+		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, 175f+i*6)));
+		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, -5+i*6)));
+		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, 85f+i*6)));
+		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, 215f+i*6)));
+		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, -95f+i*6)));
+		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, 155f+i*6)));
+		Instantiate (enemyBulletPre, transform.position, Quaternion.Euler (transform.eulerAngles + new Vector3 (0f, 0f, 195f+i*6)));
 	}
 	private void EnemyAttack3 (int i)
 	{	
