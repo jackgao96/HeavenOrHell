@@ -4,13 +4,17 @@ using UnityEngine;
 
 public class player : MonoBehaviour
 {
+	public static player _instance;
 	public float moveSpeed = 4;
 	public GameObject bulletPrefab;
+	public float t = 1;
+
 
 	// Use this for initialization
 	void Start ()
 	{
-		
+		_instance = this;	
+		Time.timeScale = 0;
 	}
 	
 	// Update is called once per frame
@@ -39,6 +43,8 @@ public class player : MonoBehaviour
 		switch (collision.tag) {
 		case"EnemyBullet":
 			Destroy (gameObject);
+			Time.timeScale = 0;
+			t = Time.timeScale;
 			break;
 
 		default:
