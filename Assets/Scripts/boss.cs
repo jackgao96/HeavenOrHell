@@ -22,9 +22,7 @@ public class boss : MonoBehaviour
 			timeVal = 0;
 			i++;
 		} else {
-
 			timeVal += Time.deltaTime;
-
 		}	
 	}
 

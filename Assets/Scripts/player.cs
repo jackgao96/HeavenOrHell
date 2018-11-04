@@ -30,7 +30,7 @@ public class player : MonoBehaviour
 		transform.Translate (Vector3.right * h * moveSpeed * Time.deltaTime, Space.World);
 		float v = Input.GetAxisRaw ("Vertical");
 		transform.Translate (Vector3.up * v * moveSpeed * Time.deltaTime, Space.World);
-		Instantiate (bulletPrefab, transform.position, transform.rotation);
+		//Instantiate (bulletPrefab, transform.position, transform.rotation);
 	}
 
 	private void OnTriggerEnter2D (Collider2D collision)
